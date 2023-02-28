@@ -3,7 +3,6 @@ languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
 title: Mastering the Art of Networking
-description: From practical tips to thought-provoking insights, we cover all aspects of networking to help you achieve your goals!
 
 languages:
     en:
@@ -58,7 +57,7 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle:
+        subtitle: From practical tips to thought-provoking insights, we cover all aspects of networking to help you achieve your goals!
         avatar: 
             enabled: true
             local: true
