@@ -15,6 +15,10 @@ menu:
             icon: user
 ---
 
-"Mastering the art of networking" is the ultimate destination for all things related to networking. Whether you're a beginner or a seasoned professional, our blog offers a wealth of resources to help you stay up-to-date on the latest trends and technologies in the industry. Our comprehensive how-to guides and detailed blog posts cover a wide range of topics, from setting up a basic network to troubleshooting complex issues. We also explore the inner workings of networking technologies and provide expert insights into best practices and strategies for optimizing network performance. With "Mastering the art of networking," you'll have everything you need to become a networking master.
+Hello and welcome to "Mastering the Art of Networking"! My name is Dalton Stubbs, and I am the owner of this blog. I am a Satellite Communications Operator in the Army, with a passion for networking and all IT-related topics.
 
+My passion for networking began when I first learned about routing and switching. I was fascinated by how information could be transmitted across vast distances and how routers and switches worked together to make it happen. Combining that with Satellite Antenna modems allowed me understand the basic flow of information from the end user to the Antenna. From there, my interest in networking vastly grew, and I began to delve deeper into topics such as cloud computing and network architecture.
 
+Most of the topics covered in my blog are routing and switching, cloud computing, and network architecture focused.
+
+In this blog, I will be sharing my knowledge and expertise in these areas to help you master the art of networking. Whether you are a beginner or an experienced network engineer, I believe that you will find value in the content that I will be sharing. I look forward to sharing my insights with you, and I hope that you will join me on this journey to becoming a networking expert.
