@@ -18,54 +18,14 @@ aliases = ["migrate-from-jekyl"]
 image = ""
 +++
 
-This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
-<!--more-->
+The article explains how STP works, its role in preventing network disruptions, and the different types of STP configurations. It also discusses some common issues that can occur with STP, and ways to troubleshoot and resolve them. Overall, the article is a useful resource for network administrators and anyone interested in learning about STP and its importance in network design and management.
 
-## Headings
+## What is Spanning Tree Protocol?
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+Spanning Tree Protocol (STP) is a protocol used in computer networks to prevent loops and ensure redundancy by creating a loop-free logical topology. It is used to identify the most efficient path between two switches in a network and to block other paths that would create a loop. STP is a critical protocol in ensuring the stability and efficiency of large networks. It has been standardized by the IEEE 802.1D specification and is widely implemented in switches and routers today.
 
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
+## How Does it Work?
 
-## Paragraph
+Spanning Tree Protocol (STP) works by identifying and blocking redundant links in a network to prevent loops from forming. Loops occur when there are multiple paths between two nodes in a network, and data packets can get stuck in an endless cycle, causing network congestion and failure. STP works by selecting a single "root bridge" for the network and calculating the shortest path from every other switch or bridge in the network to the root bridge. Each switch or bridge then forwards data packets to the root bridge using the calculated shortest path. This is done by assigning a cost value to each link in the network and selecting the path with the lowest total cost. 
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
-
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
-
-## Blockquotes
-
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
-
-#### Blockquote without attribution
-
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use *Markdown syntax* within a blockquote.
-
-#### Blockquote with attribution
-
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Tables
-
-Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
-
-   Name | Age
---------|------
-    Bob | 27
-  Alice | 23
-
-#### Inline Markdown within tables
-
-| Italics   | Bold     | Code   |
-| --------  | -------- | ------ |
-| *italics* | **bold** | `code` |
 
