@@ -49,29 +49,19 @@
 &lt;p>Each of these Spanning Tree Protocol modes has its own advantages and disadvantages, and the choice of which mode to use depends on the specific requirements of the network.&lt;/p>
 &lt;h2 id="how-to-configure-stp">How to Configure STP&lt;/h2>
 &lt;p>Here are the basic steps and commands to configure Spanning Tree Protocol (STP) on a Cisco switch:&lt;/p>
-&lt;ol>
-&lt;li>
 &lt;p>Enable STP on the switch:&lt;/p>
 &lt;p>&amp;lsquo;switch(config)# spanning-tree mode &lt;!-- raw HTML omitted -->&amp;rsquo;&lt;/p>
 &lt;p>NOTE :Replace &lt;!-- raw HTML omitted --> with the appropriate mode (STP, RSTP, or MSTP) for your network.&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>Configure the priority of the switch:&lt;/p>
 &lt;p>&amp;lsquo;switch(config)# spanning-tree vlan &lt;!-- raw HTML omitted --> priority &lt;!-- raw HTML omitted -->&amp;rsquo;&lt;/p>
 &lt;p>NOTE :Replace &lt;!-- raw HTML omitted --> with the ID of the VLAN you want to configure, and &lt;!-- raw HTML omitted --> with a value between 0 and 65535. Lower values have higher priority, so the switch with the lowest priority will become the root bridge.&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>Configure the PortFast feature:&lt;/p>
 &lt;p>&amp;lsquo;switch(config)# interface &lt;!-- raw HTML omitted -->&amp;rsquo;&lt;/p>
 &lt;p>&amp;lsquo;switch(config-if)# spanning-tree portfast&amp;rsquo;&lt;/p>
 &lt;p>NOTE: PortFast is a Cisco-specific feature that allows a port to transition directly from blocking to forwarding state, bypassing the listening and learning states. It should only be used on ports that are directly connected to end devices such as computers or servers.&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>Verify the STP configuration:&lt;/p>
 &lt;p>&amp;lsquo;switch# show spanning-tree&amp;rsquo;&lt;/p>
 &lt;p>NOTE: This command displays information about the Spanning Tree Protocol configuration, including the root bridge, the designated ports, and the blocked ports.&lt;/p>
-&lt;/li>
-&lt;/ol>
 &lt;p>It is important to note that the exact commands and steps to configure STP on a Cisco switch may vary depending on the specific model and software version of the switch.&lt;/p></description></item><item><title>Testing push from linux</title><link>https://daltonstubbs.github.io/p/testing-push-from-linux/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://daltonstubbs.github.io/p/testing-push-from-linux/</guid><description>&lt;img src="https://daltonstubbs.github.io/p/testing-push-from-linux/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Testing push from linux" />&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
 &lt;h2 id="headings">Headings&lt;/h2>
 &lt;p>The following HTML &lt;code>&amp;lt;h1&amp;gt;&lt;/code>—&lt;code>&amp;lt;h6&amp;gt;&lt;/code> elements represent six levels of section headings. &lt;code>&amp;lt;h1&amp;gt;&lt;/code> is the highest section level while &lt;code>&amp;lt;h6&amp;gt;&lt;/code> is the lowest.&lt;/p>

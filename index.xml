@@ -49,29 +49,19 @@
 &lt;p>Each of these Spanning Tree Protocol modes has its own advantages and disadvantages, and the choice of which mode to use depends on the specific requirements of the network.&lt;/p>
 &lt;h2 id="how-to-configure-stp">How to Configure STP&lt;/h2>
 &lt;p>Here are the basic steps and commands to configure Spanning Tree Protocol (STP) on a Cisco switch:&lt;/p>
-&lt;ol>
-&lt;li>
 &lt;p>Enable STP on the switch:&lt;/p>
 &lt;p>&amp;lsquo;switch(config)# spanning-tree mode &lt;!-- raw HTML omitted -->&amp;rsquo;&lt;/p>
 &lt;p>NOTE :Replace &lt;!-- raw HTML omitted --> with the appropriate mode (STP, RSTP, or MSTP) for your network.&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>Configure the priority of the switch:&lt;/p>
 &lt;p>&amp;lsquo;switch(config)# spanning-tree vlan &lt;!-- raw HTML omitted --> priority &lt;!-- raw HTML omitted -->&amp;rsquo;&lt;/p>
 &lt;p>NOTE :Replace &lt;!-- raw HTML omitted --> with the ID of the VLAN you want to configure, and &lt;!-- raw HTML omitted --> with a value between 0 and 65535. Lower values have higher priority, so the switch with the lowest priority will become the root bridge.&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>Configure the PortFast feature:&lt;/p>
 &lt;p>&amp;lsquo;switch(config)# interface &lt;!-- raw HTML omitted -->&amp;rsquo;&lt;/p>
 &lt;p>&amp;lsquo;switch(config-if)# spanning-tree portfast&amp;rsquo;&lt;/p>
 &lt;p>NOTE: PortFast is a Cisco-specific feature that allows a port to transition directly from blocking to forwarding state, bypassing the listening and learning states. It should only be used on ports that are directly connected to end devices such as computers or servers.&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>Verify the STP configuration:&lt;/p>
 &lt;p>&amp;lsquo;switch# show spanning-tree&amp;rsquo;&lt;/p>
 &lt;p>NOTE: This command displays information about the Spanning Tree Protocol configuration, including the root bridge, the designated ports, and the blocked ports.&lt;/p>
-&lt;/li>
-&lt;/ol>
 &lt;p>It is important to note that the exact commands and steps to configure STP on a Cisco switch may vary depending on the specific model and software version of the switch.&lt;/p></description></item><item><title>About</title><link>https://daltonstubbs.github.io/about/</link><pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate><guid>https://daltonstubbs.github.io/about/</guid><description>&lt;p>Hello and welcome to &amp;ldquo;Mastering the Art of Networking&amp;rdquo;! My name is Dalton Stubbs, and I am the owner of this blog. I am a Satellite Communications Operator in the Army, with a passion for networking and all IT-related topics.&lt;/p>
 &lt;p>My passion for networking began when I first learned about routing and switching. I was fascinated by how information could be transmitted across vast distances and how routers and switches worked together to make it happen. Combining that with Satellite Antenna modems allowed me understand the basic flow of information from the end user to the Antenna. From there, my interest in networking vastly grew, and I began to delve deeper into topics such as cloud computing and network architecture.&lt;/p>
 &lt;p>Most of the topics covered in my blog are routing and switching, cloud computing, and network architecture focused.&lt;/p>
