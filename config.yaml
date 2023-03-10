@@ -1,7 +1,7 @@
 baseurl: https://daltonstubbs.github.io
 languageCode: en-us
 theme: hugo-theme-stack
-paginate: 10
+paginate: 5 
 title: Mastering the Art of Networking
 
 languages:
