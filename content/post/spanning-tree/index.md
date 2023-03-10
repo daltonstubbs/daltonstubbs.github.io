@@ -79,27 +79,27 @@ Here are the basic steps and commands to configure Spanning Tree Protocol (STP) 
 
 Enable STP on the switch:
 
-'switch(config)# spanning-tree mode <mode>'
+	`switch(config)# spanning-tree mode <mode>`
 
 NOTE :Replace <mode> with the appropriate mode (STP, RSTP, or MSTP) for your network.
 
 Configure the priority of the switch:
 
-'switch(config)# spanning-tree vlan <vlan-id> priority <priority-value>'
+	`switch(config)# spanning-tree vlan <vlan-id> priority <priority-value>`
 
 NOTE :Replace <vlan-id> with the ID of the VLAN you want to configure, and <priority-value> with a value between 0 and 65535. Lower values have higher priority, so the switch with the lowest priority will become the root bridge.
 
 Configure the PortFast feature:
 
-'switch(config)# interface <interface-id>'
+	`switch(config)# interface <interface-id>`
 
-'switch(config-if)# spanning-tree portfast'
+	`switch(config-if)# spanning-tree portfast`
 
 NOTE: PortFast is a Cisco-specific feature that allows a port to transition directly from blocking to forwarding state, bypassing the listening and learning states. It should only be used on ports that are directly connected to end devices such as computers or servers.
 
 Verify the STP configuration:
 
-'switch# show spanning-tree'
+	`switch# show spanning-tree`
 
 NOTE: This command displays information about the Spanning Tree Protocol configuration, including the root bridge, the designated ports, and the blocked ports.
 
