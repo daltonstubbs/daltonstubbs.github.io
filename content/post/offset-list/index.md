@@ -38,8 +38,8 @@ When the offset list is applied to an interface or a range of interfaces, it wil
 
 Create an access list that identifies the routes that the offset list should apply to. For example, to apply the offset list to all routes except for those in the 10.1.1.0/24 subnet, you could use the following access list:
 
-	`access-list 10 permit any`
-	`access-list 10 deny 10.1.1.0 0.0.0.255`
+	access-list 10 permit any
+	access-list 10 deny 10.1.1.0 0.0.0.255
 
 Create the EIGRP offset list and specify the offset value that should be applied to the selected routes. For example, to increase the metric of selected routes by 5000, you could use the following command:
 
@@ -50,8 +50,8 @@ In this example, "10" is the number of the access list created in step 1, "in" i
 
 Apply the access list to the appropriate EIGRP interfaces. For example, to apply the access list to all EIGRP interfaces, you could use the following command:
 
-	`router eigrp 100`
-	`access-list 10 in`
+	router eigrp 100
+	access-list 10 in
 
 In this example, "10" is the number of the access list created in step 1, and "in" indicates that the access list should be applied to inbound traffic.
 
