@@ -61,7 +61,7 @@ params:
         avatar:
             enabled: true
             local: true
-            src:  daltonstubbs.github.io/resources/_gen/images/avatar.png
+            src:  img/avatar.png
 
     article:
         math: false
