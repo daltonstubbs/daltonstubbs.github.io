@@ -13,13 +13,13 @@
 `access-list 10 deny 10.1.1.0 0.0.0.255`
 &lt;/code>&lt;/pre>
 &lt;p>Create the EIGRP offset list and specify the offset value that should be applied to the selected routes. For example, to increase the metric of selected routes by 5000, you could use the following command:&lt;/p>
-&lt;pre>&lt;code>`router eigrp 100`
-`offset-list 1 in 5000`
+&lt;pre>&lt;code>router eigrp 100
+offset-list 10 in 5000
 &lt;/code>&lt;/pre>
-&lt;p>In this example, &amp;ldquo;1&amp;rdquo; is the number of the access list created in step 1, &amp;ldquo;in&amp;rdquo; indicates that the offset should be applied to routes received by the router, and &amp;ldquo;5000&amp;rdquo; is the value of the offset.&lt;/p>
+&lt;p>In this example, &amp;ldquo;10&amp;rdquo; is the number of the access list created in step 1, &amp;ldquo;in&amp;rdquo; indicates that the offset should be applied to routes received by the router, and &amp;ldquo;5000&amp;rdquo; is the value of the offset.&lt;/p>
 &lt;p>Apply the access list to the appropriate EIGRP interfaces. For example, to apply the access list to all EIGRP interfaces, you could use the following command:&lt;/p>
 &lt;pre>&lt;code>`router eigrp 100`
-`distribute-list 10 in`
+`access-list 10 in`
 &lt;/code>&lt;/pre>
 &lt;p>In this example, &amp;ldquo;10&amp;rdquo; is the number of the access list created in step 1, and &amp;ldquo;in&amp;rdquo; indicates that the access list should be applied to inbound traffic.&lt;/p>
 &lt;p>It&amp;rsquo;s important to note that the specific configuration steps may vary depending on your network setup and requirements. Additionally, it&amp;rsquo;s recommended to test any changes to your network configuration in a lab environment before applying them to a production network.&lt;/p></description></item><item><title>Understanding Spanning Tree Protocol: How It Prevents Network Loops</title><link>https://daltonstubbs.github.io/p/understanding-spanning-tree-protocol-how-it-prevents-network-loops/</link><pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate><guid>https://daltonstubbs.github.io/p/understanding-spanning-tree-protocol-how-it-prevents-network-loops/</guid><description>&lt;p>The article explains how STP works, its role in preventing network disruptions, and the different types of STP configurations. It also discusses some common issues that can occur with STP, and ways to troubleshoot and resolve them. Overall, the article is a useful resource for network administrators and anyone interested in learning about STP and its importance in network design and management.&lt;/p>
