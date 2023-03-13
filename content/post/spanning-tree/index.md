@@ -4,14 +4,9 @@ title = "Understanding Spanning Tree Protocol: How It Prevents Network Loops"
 date = "2023-03-07"
 description = "an introduction to the Spanning Tree Protocol (STP), a fundamental protocol used in computer networks to prevent loops and ensure network reliability."
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+    "spanning tree",
 ]
 categories = [
-    "themes",
-    "syntax",
 ]
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
