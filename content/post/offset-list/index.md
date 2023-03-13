@@ -5,11 +5,8 @@ date = "2023-03-10"
 description = "a detailed explanation of what offset lists are, how they work, and how they can be used to modify the metric of specific routes in order to influence the flow of traffic."
 tags = [
     "eigrp",
-    "routing",
 ]
 categories = [
-    "themes",
-    "syntax",
 ]
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
