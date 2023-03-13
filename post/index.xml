@@ -1,4 +1,95 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Mastering the Art of Networking</title><link>https://daltonstubbs.github.io/post/</link><description>Recent content in Posts on Mastering the Art of Networking</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 10 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://daltonstubbs.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Beyond the Basics: Using Offset Lists to Fine-Tune Network Performance</title><link>https://daltonstubbs.github.io/p/beyond-the-basics-using-offset-lists-to-fine-tune-network-performance/</link><pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate><guid>https://daltonstubbs.github.io/p/beyond-the-basics-using-offset-lists-to-fine-tune-network-performance/</guid><description>&lt;h2 id="what-is-an-offset-list">What is an Offset List?&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Mastering the Art of Networking</title><link>https://daltonstubbs.github.io/post/</link><description>Recent content in Posts on Mastering the Art of Networking</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 12 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://daltonstubbs.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>EIGRP Administrative Distances</title><link>https://daltonstubbs.github.io/p/eigrp-administrative-distances/</link><pubDate>Sun, 12 Mar 2023 00:00:00 +0000</pubDate><guid>https://daltonstubbs.github.io/p/eigrp-administrative-distances/</guid><description>&lt;h2 id="what-are-eigrp-administrative-distances">What Are EIGRP Administrative Distances?&lt;/h2>
+&lt;p>In Cisco&amp;rsquo;s Enhanced Interior Gateway Routing Protocol (EIGRP), administrative distance (AD) is a metric used to determine the reliability and trustworthiness of a particular route or path. It is used to select the best path among multiple possible paths to a destination network. Administrative distance values are assigned to each type of routing protocol or route source. When EIGRP receives multiple routes to the same destination network from different sources, it selects the route with the lowest administrative distance as the best path.&lt;/p>
+&lt;p>Here are the default administrative distance values for EIGRP:&lt;/p>
+&lt;pre>&lt;code>Connected interface: 0
+EIGRP summary route: 5
+Internal EIGRP route: 90
+External EIGRP route: 170
+&lt;/code>&lt;/pre>
+&lt;p>It is important to note that these administrative distances are LOCAL to the router, and are not shared or influenced by another router&amp;rsquo;s information. Even though there is a connection between two router&amp;rsquo;s and they are under the same EIGRP AS number, they do not influence each others EIGRP Administrative Distance.&lt;/p>
+&lt;p>A connected interface has an AD of 0 because it is directly connected to the router and is considered the most reliable and trustworthy path.&lt;/p>
+&lt;p>EIGRP summary routes are routes that are manually configured by the network administrator and are used to summarize multiple subnets into a single route. They have an AD of 5, indicating that they are less reliable than connected interfaces but more reliable than internal EIGRP routes.&lt;/p>
+&lt;p>Internal EIGRP routes are routes that are learned from other EIGRP routers within the same autonomous system (AS). They have an AD of 90, indicating that they are less reliable than connected interfaces and EIGRP summary routes but more reliable than external EIGRP routes.&lt;/p>
+&lt;p>External EIGRP routes are routes that are learned from routers outside the AS, such as routes from other routing protocols or from the Internet. They have an AD of 170, indicating that they are the least reliable and trustworthy paths. External EIGRP routes are those that are learned from other protocols, such as OSPF and RIP. This is done by a local router using redistribrution lists and pushing that information out. Since the router is participating in EIGRP, if it is connected to other routers via OSPF or RIP, it can pass that information in it&amp;rsquo;s EIGRP packets and allow all other neighbors to hit those routes through it. Think of it as forming a bride between a local EIGRP family and another family of routing protocols.&lt;/p>
+&lt;p>It&amp;rsquo;s important to note that these default administrative distance values can be changed by the network administrator, and different values may be more appropriate for different network topologies and environments.&lt;/p>
+&lt;h2 id="how-to-view-your-administrative-distances">How to View Your Administrative Distances.&lt;/h2>
+&lt;p>To view the EIGRP administrative distances configured on a Cisco router, you can use the &lt;code>show ip protocols&lt;/code> command. This command displays the current status of all routing protocols running on the router, including EIGRP.&lt;/p>
+&lt;p>In the output of the show ip protocols command, you should see a section labeled &lt;code>EIGRP-IPv4 Protocol Information&lt;/code> that displays the administrative distances for connected, summary, internal, and external routes. Here&amp;rsquo;s an example of what the output might look like:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">***Output omitted for brevity***
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Routing Protocol is &amp;#34;eigrp 1&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Outgoing update filter list for all interfaces is not set
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Incoming update filter list for all interfaces is not set
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Default networks flagged in outgoing updates
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Default networks accepted from incoming updates
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> EIGRP-IPv4 Protocol for AS(1)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Metric weight K1=1, K2=0, K3=1, K4=0, K5=0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Metric weight K6=0, K7=0, K8=0, K9=0, K10=0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Maximum hopcount 100
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Maximum metric variance 1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Automatic summarization is in effect
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Automatic network summarization:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 10.0.0.0/8 for FastEthernet0/0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Routing for Networks:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 10.0.0.0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Routing Information Sources:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Gateway Distance Last Update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 192.168.1.1 90 00:00:05
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Distance: internal 90 external 170
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>In this example, the administrative distance for internal routes is 90 and the administrative distance for external routes is 170.&lt;/p>
+&lt;p>A cleaner way to look at this would be a simple &lt;code>show ip route eigrp&lt;/code> command. This would output something like this:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 10.0.0.0/8 is variably subnetted, 3 subnets, 2 masks
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">D 10.1.1.0/24 [90/2297856] via 192.168.1.1, 00:00:19, FastEthernet0/0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">D 10.2.2.0/24 [90/2297856] via 192.168.2.1, 00:00:19, FastEthernet1/0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">D 10.3.3.0/24 [90/2297856] via 192.168.3.1, 00:00:19, FastEthernet2/0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 172.16.0.0/16 is variably subnetted, 2 subnets, 2 masks
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">D 172.16.10.0/24 [90/2297856] via 192.168.1.1, 00:00:19, FastEthernet0/0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">D EX 172.16.20.0/23 [170/3072] via 192.168.2.1, 00:00:19, FastEthernet1/0
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>In this example output, there are three EIGRP-learned internal routes and one EIGRP-learned external route. The D in the left column indicates that the routes were learned from EIGRP, and the EX for the last route indicates that it is an external route.&lt;/p></description></item><item><title>Beyond the Basics: Using Offset Lists to Fine-Tune Network Performance</title><link>https://daltonstubbs.github.io/p/beyond-the-basics-using-offset-lists-to-fine-tune-network-performance/</link><pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate><guid>https://daltonstubbs.github.io/p/beyond-the-basics-using-offset-lists-to-fine-tune-network-performance/</guid><description>&lt;h2 id="what-is-an-offset-list">What is an Offset List?&lt;/h2>
 &lt;p>An offset list in EIGRP (Enhanced Interior Gateway Routing Protocol) is a tool used to modify the metric (or cost) of specific routes in order to influence how traffic is directed through the network. Think of it like a secret code that changes the directions on a map to get to a destination faster or slower. EIGRP uses a metric to determine the best path for traffic to flow through the network. The metric is based on factors such as bandwidth, delay, reliability, and load.&lt;/p>
 &lt;p>With an offset list, a network administrator can add or subtract a fixed value from the metric of certain routes, which can change the cost of those routes and thus influence how traffic flows. This can be useful in situations where the administrator wants to prioritize certain types of traffic or avoid congested links in the network. For example, if there are two paths to a destination, and one is faster but more expensive in terms of cost, the network administrator can use an offset list to decrease the cost of the faster path, making it more attractive for traffic to use.&lt;/p>
 &lt;h2 id="an-example-use-case-for-offset-lists">An Example Use Case for Offset Lists.&lt;/h2>
