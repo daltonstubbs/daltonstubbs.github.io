@@ -24,7 +24,7 @@ navbar-links:
   Resources:
     - Eve-NG: "https://www.eve-ng.net/"
     - Nautobot Container: "https://github.com/nautobot/nautobot-lab"
-    - Docker Desktop: "https://www.docker.com/products/docker-desktop/""
+    - Docker Desktop: "https://www.docker.com/products/docker-desktop/"
   Author's home: "https://daltonstubbs.github.io"
 
 ################
