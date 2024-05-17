@@ -14,6 +14,9 @@ Dalton is not only a proficient technical expert but also a collaborative leader
 
 With a relentless commitment to excellence and a proven track record of delivering tangible outcomes, Dalton continues to be an indispensable asset in safeguarding the integrity and resilience of the DoD's network infrastructure.
 
+
+![JCU](assets\img\JCU.png){: .mx-auto.d-block :}
+
 <!--- ### My story
 
 To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions. -->
