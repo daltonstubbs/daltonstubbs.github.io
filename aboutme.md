@@ -15,7 +15,7 @@ Dalton is not only a proficient technical expert but also a collaborative leader
 With a relentless commitment to excellence and a proven track record of delivering tangible outcomes, Dalton continues to be an indispensable asset in safeguarding the integrity and resilience of the DoD's network infrastructure.
 
 
-<img src="assets/img/JCU.png" alt="JCU" class="mx-auto d-block">
+![Dalton](assets/img/Dalton_DC.jpg)
 
 <!--- ### My story
 
