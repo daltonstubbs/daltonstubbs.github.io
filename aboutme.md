@@ -4,15 +4,21 @@ title: About me
 subtitle: Senior Network Engineer | Department of Defense
 ---
 
-Dalton Stubbs is a seasoned Senior-Level Network Engineer with a wealth of experience in designing, implementing, and optimizing complex networking infrastructures. With a robust background in both traditional networking and cutting-edge automation technologies, hehas played a pivotal role in ensuring the efficiency, security, and reliability of critical networks within the Department of Defense (DoD) for the last 7 years.
+## Meet Dalton Stubbs, Network Engineer
 
-Possessing a rich array of certifications including CCNP Enterprise, CASP (CompTIA Advanced Security Practitioner), and Azure Fundamentals, Dalton demonstrates an exceptional command over a diverse range of networking paradigms and security protocols. This expertise empowers him to navigate the intricate landscapes of modern networking challenges with confidence and precision.
+Dalton Stubbs brings over 7 years of experience in designing, implementing, and optimizing complex networking infrastructures, primarily within the Department of Defense (DoD). With expertise in both traditional networking and cutting-edge automation technologies, Dalton ensures the efficiency, security, and reliability of critical networks.
 
-Throughout Dalton's career in the DoD, they have been at the forefront of innovation, leveraging automation tools and techniques to streamline operations, enhance performance, and fortify cybersecurity postures. Their proficiency in automation platforms amplifies their ability to architect scalable, cloud-integrated solutions that align seamlessly with the evolving demands of the DoD's mission-critical operations.
+## Key Expertise and Certifications
 
-Dalton is not only a proficient technical expert but also a collaborative leader known for his ability to inspire teams, foster innovation, and drive results in high-pressure environments. His dedication to staying abreast of emerging technologies and industry best practices ensures that the him and his teammates remain at the vanguard of excellence in the field of network engineering.
+Dalton holds certifications including CCNP Enterprise, CASP+ (CompTIA Advanced Security Practitioner), and Azure Fundamentals. This diverse skill set enables Dalton to navigate modern networking challenges confidently, with a strong focus on security protocols.
 
-With a relentless commitment to excellence and a proven track record of delivering tangible outcomes, Dalton continues to be an indispensable asset in safeguarding the integrity and resilience of the DoD's network infrastructure.
+## Innovation and Leadership
+
+Throughout Dalton’s career, they have led innovative efforts, leveraging automation tools to streamline operations and enhance cybersecurity. Dalton is not only a technical expert but also a collaborative leader known for inspiring teams and driving results in high-pressure environments.
+
+## Commitment to Excellence
+
+With a dedication to staying updated on emerging technologies and industry best practices, Dalton remains at the forefront of network engineering excellence. Their proven track record in delivering tangible outcomes makes them an indispensable asset in safeguarding DoD’s network infrastructure.
 
 
 ![Dalton](assets/img/Dalton_DC.jpg)
