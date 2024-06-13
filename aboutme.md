@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Senior Network Engineer | Department of Defense
+subtitle: Network Engineer | Department of Defense
 ---
 
 ## Meet Dalton Stubbs, Network Engineer
@@ -10,7 +10,7 @@ Dalton Stubbs brings over 7 years of experience in designing, implementing, and 
 
 ## Key Expertise and Certifications
 
-Dalton holds certifications including CCNP Enterprise, CASP+ (CompTIA Advanced Security Practitioner), and Azure Fundamentals. This diverse skill set enables Dalton to navigate modern networking challenges confidently, with a strong focus on security protocols.
+Dalton holds certifications including CCNP Enterprise, DevNet Associate, CASP+ (CompTIA Advanced Security Practitioner), Azure Fundamentals, CCNA, Sec+, and a Bachelors of Science in Cybersecurity Management and Policy. This diverse skill set enables Dalton to navigate modern networking challenges confidently, with a strong focus on security protocols.
 
 ## Innovation and Leadership
 
