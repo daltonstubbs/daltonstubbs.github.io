@@ -21,7 +21,7 @@ author: Dalton Stubbs
 
 navbar-links:
   Home: "https://daltonstubbs.github.io"
-  About Me: "aboutme"
+  About Me: "aboutme" 
   Resources:
     - Eve-NG: "https://www.eve-ng.net/"
     - Nautobot Container: "https://github.com/nautobot/nautobot-lab"
