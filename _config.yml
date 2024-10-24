@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: My Personal Space
+title: Welcome!
 
 # Your name to show in the footer
 author: Dalton Stubbs
@@ -20,12 +20,12 @@ author: Dalton Stubbs
 ###############################################
 
 navbar-links:
+  Home: "https://daltonstubbs.github.io"
   About Me: "aboutme"
   Resources:
     - Eve-NG: "https://www.eve-ng.net/"
     - Nautobot Container: "https://github.com/nautobot/nautobot-lab"
     - Docker Desktop: "https://www.docker.com/products/docker-desktop/"
-  Author's home: "https://daltonstubbs.github.io"
 
 ################
 # --- Logo --- #
@@ -36,7 +36,7 @@ navbar-links:
 avatar: "/assets/img/male-avatar.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
+round-avatar: false
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
