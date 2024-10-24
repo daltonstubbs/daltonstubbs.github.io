@@ -17,6 +17,8 @@ Another interesting feature of EIGRP is its named mode, which allows the protoco
 {: .box-success}
 Note to Readers: This article assumes that the reader has a basic understanding of IPv6 and the fundamentals of EIGRP. While we will cover key concepts of both, a foundational knowledge of these topics will help in following the discussion more effectively.
 
+# Configuring Classic Mode EIGRP for IPv6
+
 By default, the forwarding of IPv6 packets is turned off on most Cisco platforms. To enable IPv6 packet forwarding, you must first enter the command **ipv6 unicast-routing** in global configuration mode. Only after you enable this feature can you proceed to configure and activate EIGRP for IPv6. Below is an example of attempting to configure classic EIGRP mode on a router that does not have IPv6 enabled, and then it is fixed and retried:
 
 ```md
@@ -28,3 +30,13 @@ R1(config)#ipv6 unicast-routing
 R1(config)#ipv6 router eigrp 1
 R1(config-rtr)#
 ```
+
+Now that we have the base EIGRP instance created, we need to assign a router ID to it. It's important to note that for EIGRPv6, the router ID must be configured before the EIGRPv6 protocol instance can operate. If you don’t define a router ID, the process will never fully enable, leading to potential troubleshooting of neighbor adjacency issues that don’t actually exist. Even though the router ID looks like an IPv4 address, it’s actually just a 32-bit identifier that represents the router within the EIGRP process.
+
+```md
+R1(config)#ipv6 router eigrp 1
+R1(config-rtr)#eigrp router-id **1.1.1.1**
+R1(config-rtr#)
+```
+{: .box-error}
+**Error:** This is an error box.
