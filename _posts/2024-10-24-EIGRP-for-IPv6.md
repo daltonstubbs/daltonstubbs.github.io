@@ -19,7 +19,7 @@ Note to Readers: This article assumes that the reader has a basic understanding 
 
 By default, the forwarding of IPv6 packets is turned off on most Cisco platforms. To enable IPv6 packet forwarding, you must first enter the command **ipv6 unicast-routing** in global configuration mode. Only after you enable this feature can you proceed to configure and activate EIGRP for IPv6. Below is an example of attempting to configure classic EIGRP mode on a router that does not have IPv6 enabled, and then it is fixed:
 
-~~~
+```text
 R1#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
 R1(config)#ipv6 router eigrp 1
@@ -27,4 +27,4 @@ R1(config)#ipv6 router eigrp 1
 R1(config)#ipv6 unicast-routing 
 R1(config)#ipv6 router eigrp 1
 R1(config-rtr)#
-~~~
+```
