@@ -4,7 +4,7 @@ title: EIGRP for IPv6
 gh-repo: daltonstubbs
 gh-badge: [star, follow]
 tags: [ipv6, eigrp]
-comments: true
+comments: false
 author: Dalton Stubbs
 ---
 
